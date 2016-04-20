@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>flask article</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><button type="button" class="btn btn-default navbar-btn log-in" data-toggle="modal" data-target="#log_model">sign up</button><li>
+            <li><button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#sign_model">log in</button><li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!--sign in  Modal -->
+    <div class="modal fade" id="log_model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">sign up</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="Email1_sign" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="Password_sign" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputFile">Age : </label>
+                <input type="text" class="form-control" id="age_sign" placeholder="enter your age">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- log in Modal -->
+    <div class="modal fade" id="sign_model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">log in</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="Email1_log" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="Password_log" placeholder="Password">
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> remember me
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">article title</h3>
+            </div>
+            <div class="panel-body">
+              Django
+              grin emoticon
+
+              .
+              بص يا سيدي
+              grin emoticon
+
+              دجانجو دة عبارة عن فريم وورك خاص بالوب زي ال PHP كدة ..ولكن مبني علي بايثون
+              kiki emoticon
+
+              .
+              تاريخة :
+              دجانجو اتولد سنة 2003 .. بدايتة كانت عبارة عن اتنين مبرمجين ويب هما Adrian Holovaty and Simon Willison كانوا شغاليين في صحيفة لورنس جورنال العالمية بدأو يكتبوا تطبيقات بالبايثون وانتهي بهم الامر بعمل فريم وورك كامل سموة وقتها Django واطلقوة سنة 2005
+              .
+              .
+              مميزاتة
+              grin emoticon
+              :
+              .
+              Django is URL-driven Web framework بمعني ان مطورين المواقع اللي بيشتغلوا علية بأمكانهم انهم يختاروا عناوين المواقع اللي بيبرمجوها
+              grin emoticon
+              ولو انتة قارنت ال url بتاع مواقع متبرمجة ب Django , مواقع متبرمجة ب Php h, asp هتشوف الفرق
+              grin emoticon
+
+              .
+              دجانجو مبني علي بايثون علشان كدة فية كل مميزات البايثون
+              grin emoticon
+              سهولة الكود واقرب ما يكون بالغة الانجليزية و السرعة وبيشتغل علي كل المنصات زي ويندوز ولينكس وماك
+              kiki emoticon
+
+              .
+              دجانجو بيقدر يتعامل مع كل انواع قواعد البيانات وبيسهل علي جدا التعامل معاها ودة بيعطي للمطور الحرية في التغيير من Database engine لأخر بسهولة
+              .
+
+              دجانجو بيحتوي علي حاجة اسمها template ودي بقي بستهلك انك تضيف اكواد تانية زي ال html , css , بسهولة جدا بعيد هن التعقيد
+              grin emoticon
+
+              .
+              دجانجو بيحتوي علي صفحة admin جاهزة بتسهلك التحكم في التطبيقات بتاعتك دا غير انك ممكن تخصص الصفحة دي براحتك
+              grin emoticon
+
+              .
+              دجانجو عبارة عن بيئة تطوير متكاملة بمعني انة بية ويب سيرفر سريع جدا بيمكنك انك تقدر تعمل المشاريع بتاعتك ولو في اي اخطأ بيوفرلك شرج كامل للخطأ علشان يسها عليك حلة
+              grin emoticon
+
+              .
+              دجانجة بيحتوي علي مجتمع كبير جدااا من المطورين
+              grin emoticon
+              هيساعدووك لو في قدامك اي مشكلة
+              .
+              دي شوية حاجات بسيطة عن فريم وورك قوي جدا .. اتمني يكون المقال عجبكم
+              grin emoticon
+
+              .
+              ‫#‏اتعلم_بايثون_بالعربي‬
+              ‪#‎python_community‬
+              ‪#‎python_programming‬
+              ‪#‎Django‬
+              ‪#‎wait_our_tutorials_in_python‬
+              ‪#‎Mahmoud_Ahmed‬
+              .
+              ‪#‎shaaaaaaaaare‬
+              grin emoticon
+              grin emoticon
+              grin emoticon
+              grin emoticon
+              <img src="img/articles/django-article.jpg" class="img-responsive entrance-pic artic-2" alt="المقالة الأولي">
+            </div>
+            <div class="panel-footer">article footer</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">information</h3>
+            </div>
+            <div class="panel-body">
+              Panel content
+            </div>
+            <div class="panel-footer">Panel footer</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+      <h2>Thank you :D</h2>
+    </footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
